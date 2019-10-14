@@ -30,6 +30,7 @@ public class InsertSort {
     private static void insertSort2(int[] arr){
         for (int i = 1; i < arr.length; i++) {
             for (int j = i; j > 0 ; j--) {
+                // 依次对小于i的已排序区进行对比，找到合适的位置，跳出当前循环
                 if (arr[j] < arr[j-1]){
                     int temp = arr[j];
                     arr[j] = arr[j-1];
